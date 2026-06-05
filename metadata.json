@@ -1,0 +1,6 @@
+{
+  "name": "Stranger Things Cinematic Experience",
+  "description": "An immersive cinematic website inspired by Stranger Things, featuring dual environments of Hawkins and the Upside Down, interactive timelines, character polaroid portfolios, retro lab contact terminals, and VHS trailer modals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-serif: "EB Garamond", Georgia, serif;
+  --color-red-500: #E21D26;
+  --color-red-600: #E21D26;
+  --color-red-700: #b01017;
+  --color-red-800: #8c0d12;
+  --color-red-950: #0a0101;
+  --color-black: #050505;
+}
+
+/* Custom Scrollbar Styles for elegant cinema feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E21D26;
+}
+
+/* CRT monitor scanlines scanlines background effects */
+.scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.45) 50%
+  ), 
+  linear-gradient(
+    90deg, 
+    rgba(226, 29, 38, 0.05), 
+    rgba(0, 255, 0, 0.01), 
+    rgba(0, 0, 255, 0.04)
+  );
+  background-size: 100% 4px, 6px 100%;
+}
+
+/* Glowing text shadows for Stranger Things theme */
+.text-shadow-red {
+  text-shadow: 0 0 5px rgba(226, 29, 38, 0.82),
+               0 0 15px rgba(226, 29, 38, 0.55),
+               0 0 30px rgba(226, 29, 38, 0.4);
+}
+
+.text-shadow-blue {
+  text-shadow: 0 0 5px rgba(59, 130, 246, 0.7),
+               0 0 15px rgba(59, 130, 246, 0.4),
+               0 0 30px rgba(59, 130, 246, 0.2);
+}
+
+/* Red-outline classic Stranger logo */
+.font-outline {
+  -webkit-text-stroke: 1.5px #E21D26;
+  color: transparent !important;
+}
+
+/* Dying Neon flicker effect */
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 0.95;
+    filter: drop-shadow(0 0 5px rgba(226, 29, 38, 0.85));
+  }
+  20%, 24%, 55% {
+    opacity: 0.35;
+    filter: drop-shadow(0 0 1px rgba(226, 29, 38, 0.25));
+  }
+}
+
+.animate-flicker {
+  animation: flicker 4s infinite alternate;
+}
+
+/* Vignette border frame shadows */
+.bg-radial-vignette {
+  background: radial-gradient(circle, transparent 50%, rgba(9, 9, 11, 0.9) 100%);
+}
+
+.bg-radial-vignette-red {
+  background: radial-gradient(circle, rgba(10, 2, 2, 0.2) 50%, rgba(10, 2, 2, 0.8) 100%);
+}
